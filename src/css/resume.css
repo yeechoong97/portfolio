@@ -1,0 +1,167 @@
+        .highlight-box {
+            box-shadow: 0 1px 10px rgba(0, 0, 0, .6);
+            border-radius: 1rem;
+            overflow: hidden;
+        }
+        
+        .border-right-side {
+            border-top-right-radius: 1rem;
+            border-bottom-right-radius: 1rem;
+        }
+        
+        .border-top-right {
+            border-top-right-radius: 1rem;
+        }
+        
+        .border-bottom-right {
+            border-bottom-right-radius: 1rem;
+        }
+        
+        .w-60 {
+            width: 60% !important;
+        }
+        
+        .year-title {
+            color: #0050ff;
+            font-family: poppins-semibold, poppins, sans-serif;
+            font-weight: bold;
+        }
+        
+        .ul-font li {
+            font-family: avenir-lt-w01_35-light1475496, sans-serif;
+            color: white;
+        }
+        
+        .download-btn {
+            color: white;
+            background-color: #0050ff;
+            font-weight: bold;
+            display: inline-block;
+            text-align: center;
+            text-decoration: none;
+            vertical-align: middle;
+            cursor: pointer;
+            border-radius: 2em;
+        }
+        
+        .download-btn:hover,
+        .download-btn:active {
+            border-color: #0050ff;
+            background-color: #eef4f7;
+            color: black;
+        }
+        
+        .page-title {
+            font-weight: bold;
+            font-size: 2.0rem;
+        }
+        
+        .position-test {
+            position: absolute;
+            left: 0;
+            top: 50px;
+            height: 50px;
+            width: 10px;
+            background-color: #0050ff;
+        }
+        
+        .no-padding {
+            padding-left: 0px !important;
+            padding-right: 0px !important;
+        }
+        
+        .img-resize {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .tags {
+            list-style: none;
+            margin: 0;
+            overflow: hidden;
+            padding: 0;
+        }
+        
+        .tags li {
+            float: left;
+        }
+        
+        .tag {
+            background: #0050ff;
+            border-radius: 3px 0 0 3px;
+            color: white;
+            display: inline-block;
+            height: 26px;
+            line-height: 26px;
+            padding: 0 20px 0 23px;
+            position: relative;
+            margin: 0 10px 10px 0;
+        }
+        
+        .tag::before {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
+            content: '';
+            height: 6px;
+            left: 10px;
+            position: absolute;
+            width: 6px;
+            top: 10px;
+        }
+        
+        .tag::after {
+            background: #fff;
+            border-bottom: 13px solid transparent;
+            border-left: 10px solid #0050ff;
+            border-top: 13px solid transparent;
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        
+        .tag:hover {
+            text-decoration: none;
+            color: white;
+            cursor: default;
+        }
+        
+        @media screen and (min-width: 100px) and (max-width:320px) {
+            .w-60 {
+                width: 90% !important;
+            }
+            .w-75 {
+                width: 90% !important;
+            }
+            .page-title {
+                font-size: 1.5rem;
+            }
+        }
+        
+        @media screen and (min-width: 321px) and (max-width:767px) {
+            .w-60 {
+                width: 85% !important;
+            }
+            .w-75 {
+                width: 85% !important;
+            }
+            .adjust-font {
+                font-size: 1.5rem;
+                margin-right: 1rem;
+            }
+        }
+        
+        @media screen and (min-width: 768px) and (max-width:991px) {
+            .w-60 {
+                width: 80% !important;
+            }
+            .w-75 {
+                width: 100% !important;
+            }
+            .adjust-font {
+                font-size: 2rem;
+                margin-right: 1rem;
+            }
+        }

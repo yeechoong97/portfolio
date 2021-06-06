@@ -1,0 +1,136 @@
+.avatar {
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: auto;
+    border-radius: 100px;
+    margin-bottom: 30px;
+}
+
+.about-me {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.p-index {
+    font-size: 1.5em;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.p-border {
+    border-radius: 1rem;
+    border: 2px solid white;
+}
+
+.backgroundImg {
+    height: 100vh;
+}
+
+.name-label {
+    line-height: 1.2em;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+}
+
+.btn-align {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: 2em;
+}
+
+.btn-resume {
+    color: white;
+    background-color: #0050ff;
+}
+
+.btn-resume:hover {
+    color: black;
+    background-color: white;
+}
+
+.btn-project {
+    color: black;
+    background-color: white;
+}
+
+.btn-project:hover {
+    color: white;
+    background-color: #0050ff;
+}
+
+@media screen and (min-height: 100px) and (max-height:550px) {
+    .p-index {
+        font-size: 1em;
+        font-weight: 300;
+        margin-bottom: 30px;
+    }
+    .backgroundImg {
+        height: 120vh;
+    }
+    .btn-align {
+        font-size: 1rem !important;
+    }
+}
+
+@media screen and (min-height: 551px) and (max-height:700px) {
+    .p-index {
+        font-size: 1.25em;
+        font-weight: 300;
+        margin-bottom: 30px;
+    }
+    .backgroundImg {
+        height: 100vh;
+    }
+    .btn-align {
+        font-size: 1.25rem !important;
+    }
+}
+
+@media screen and (min-height: 701px) and (max-height:900px) {
+    .p-index {
+        font-size: 1.5em;
+        font-weight: 300;
+        margin-bottom: 30px;
+    }
+    .backgroundImg {
+        height: 90vh;
+    }
+    .btn-align {
+        font-size: 1.5rem !important;
+    }
+}
+
+@media screen and (min-height: 901px) {
+    .p-index {
+        font-size: 2em;
+        font-weight: 300;
+        margin-bottom: 30px;
+    }
+    .backgroundImg {
+        height: 90vh;
+    }
+    .btn-align {
+        font-size: 1.5rem !important;
+    }
+}
+
+@media screen and (min-width: 100px) and (max-width:320px) {
+    .p-index {
+        font-size: 1em;
+        font-weight: 300;
+        margin-bottom: 30px;
+    }
+    .backgroundImg {
+        height: 120vh;
+    }
+    .btn-align {
+        font-size: 1rem !important;
+    }
+}
