@@ -6,7 +6,6 @@
         "@testing-library/jest-dom": "^5.13.0",
         "@testing-library/react": "^11.2.7",
         "@testing-library/user-event": "^12.8.3",
-        "hash-router": "^0.4.0",
         "react": "^17.0.2",
         "react-bootstrap": "^1.6.1",
         "react-dom": "^17.0.2",
@@ -18,9 +17,7 @@
         "start": "react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test",
-        "eject": "react-scripts eject",
-        "predeploy": "npm run build",
-        "deploy": "gh-pages -d build"
+        "eject": "react-scripts eject"
     },
     "eslintConfig": {
         "extends": [
@@ -42,6 +39,5 @@
     },
     "devDependencies": {
         "gh-pages": "^3.2.0"
-    },
-    "homepage": "https://yeechoong97.github.io/portfolio"
+    }
 }
