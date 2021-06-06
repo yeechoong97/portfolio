@@ -1,7 +1,8 @@
 import React from 'react';
 import NavMenu from './NavMenu';
 import Footer from './Footer';
-import { BrowserRouter as Router } from 'react-router-dom';
+// import { BrowserRouter as Router } from 'react-router-dom';
+import {HashRouter as Router} from 'hash-router';
 import { Route, Switch } from 'react-router-dom';
 import About from './About';
 import Resume from './Resume';
@@ -13,9 +14,9 @@ function App() {
             <div>
                 <NavMenu/>
                 <Switch>
-                    <Route exact path="/" component={About}/>
-                    <Route path="/resume" component={Resume} />
-                    <Route path="/projects" component={Project} />
+                    <Route exact path="" component={About}/>
+                    <Route path="resume" component={Resume} />
+                    <Route path="projects" component={Project} />
                 </Switch>
                 <Footer/>
             </div>

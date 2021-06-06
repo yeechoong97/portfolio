@@ -14,8 +14,8 @@ function About() {
                     </div>
                 </div>
                 <div className="text-center my-4">
-                    <a className="btn btn-align btn-resume mx-2 my-1" role="button" href="/resume">Resume</a>
-                    <a className="btn btn-align btn-project mx-2 my-1" role="button" href="/projects">Projects</a>
+                    <a className="btn btn-align btn-resume mx-2 my-1" role="button" href="resume">Resume</a>
+                    <a className="btn btn-align btn-project mx-2 my-1" role="button" href="projects">Projects</a>
                 </div>
             </div>
             </section>
