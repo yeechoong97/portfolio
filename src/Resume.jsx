@@ -12,7 +12,7 @@ function Resume() {
                     <div className="row w-60 mx-auto mt-5">
                         <h3 className="col-sm-3 px-0 adjust-font">Education</h3>
                         <div className="col-sm-3 px-0">
-                            <a className="btn download-btn btn-sm" role="button" rel="noreferrer" href="https://drive.google.com/file/d/15tAr9fnQauppH-KO-5NDkWV9mFzzkkxv/view?usp=sharing" target="_blank">Download</a>
+                            <a className="btn download-btn btn-sm" role="button" rel="noreferrer" href="https://drive.google.com/file/d/14iah6hdyx_zlCAqSgoa8Hi2FB9v52q5U/view?usp=sharing" target="_blank">Download</a>
                         </div>
                     </div>
                         <div className="row mx-auto my-4 highlight-box bg-white w-60">
