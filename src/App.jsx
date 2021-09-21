@@ -7,17 +7,18 @@ import About from './About';
 import Resume from './Resume';
 import Project from './Project';
 
-function App() {
-    return ( 
+
+const App = () => {
+    return (
         <Router>
             <div>
-                <NavMenu/>
+                <NavMenu />
                 <Switch>
-                    <Route exact path="/" component={About}/>
+                    <Route exact path="/" component={About} />
                     <Route path="/resume" component={Resume} />
                     <Route path="/projects" component={Project} />
                 </Switch>
-                <Footer/>
+                <Footer />
             </div>
         </Router>
     );
