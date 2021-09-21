@@ -189,6 +189,7 @@
     position: relative;
     display: inline-block;
     overflow: hidden;
+    border-radius: 0.5rem;
 }
 
 .button::before,
