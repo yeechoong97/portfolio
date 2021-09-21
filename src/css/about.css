@@ -214,6 +214,7 @@
 .button--mimas-dark::before {
     content: '';
     background: #212529;
+    border-radius: 0.5rem;
     color: #e7e7e7;
     width: 130%;
     left: -15%;
@@ -252,6 +253,7 @@
 .button--mimas-light::before {
     content: '';
     background: #e7e7e7;
+    border-radius: 0.5rem;
     color: #212529;
     width: 130%;
     left: -15%;
