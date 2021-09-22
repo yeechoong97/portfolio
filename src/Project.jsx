@@ -10,7 +10,7 @@ function Project() {
         <div>
             <section className={mode ? "backgroundImg-resume-dark pb-2" : "backgroundImg-resume-light pb-2"}>
                 <div className="container">
-                    <div className="w-75 mx-auto my-5 text-center">
+                    <div className="w-75 mx-auto text-center">
                         <label className={mode ? "page-title-dark pt-4" : "page-title-light pt-4"}><img alt="" src="https://res.cloudinary.com/fyp202105/image/upload/v1622960477/Portfolio/ProjectIcon.png" width="30" height="30" className="d-inline-block mr-2 mb-1" />Projects</label>
                     </div>
                     <div className={`${mode ? "bg-dark highlight-box-light" : "bg-white highlight-box-dark"} row mx-auto my-5 w-75 position-relative`}>

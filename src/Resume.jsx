@@ -10,7 +10,7 @@ const Resume = () => {
         <div>
             <section className={mode ? "backgroundImg-resume-dark pb-2" : "backgroundImg-resume-light pb-2"} >
                 <div className="container ">
-                    <div className="w-50 mx-auto my-5 text-center pt-4">
+                    <div className="w-50 mx-auto text-center pt-4">
                         <label className={mode ? "page-title-dark" : "page-title-light"}><img alt="" src="https://res.cloudinary.com/fyp202105/image/upload/v1622960653/Portfolio/ResumeIcon.png" width="30" height="30" className="d-inline-block mr-2 mb-1" />Resume</label>
                     </div>
                     <div className="row w-60 mx-auto mt-5">
@@ -41,7 +41,7 @@ const Resume = () => {
                             <p className="font-weight-bold text-uppercase">Asia Pacific University (APU)</p>
                             <p className="font-weight-light">Diploma in Information and Communications Technology Specialism in Software Engineering</p>
                         </div>
-                        <div className={`${mode ? "text-white bg-dark" : "text-dark bg-white"} col-md-7 py-5 px-4`}>
+                        <div className={`${mode ? "text-white bg-dark " : "text-dark bg-white"} col-md-7 py-5 px-4`}>
                             <ul>
                                 <li>CGPA: <b>3.76</b></li>
                             </ul>

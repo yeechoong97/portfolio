@@ -13,11 +13,9 @@ const NavMenu = () => {
 
     return (
         <div>
-            <Navbar collapseOnSelect fixed='top' expand='md' bg={mode ? 'dark' : 'light'} variant={mode ? 'dark' : 'light'} style={{ fontFamily: "Cabin,Helvetica Neue,Helvetica,Arial,sans-serif" }}>
+            <Navbar collapseOnSelect expand='md' bg={mode ? 'dark' : 'light'} variant={mode ? 'dark' : 'light'} style={{ fontFamily: "Cabin,Helvetica Neue,Helvetica,Arial,sans-serif" }}>
                 <Container>
-                    <Navbar.Brand href="/" className={` ${mode ? "text-white" : "text-dark"} text-weight-bold text-uppercase`}>
-                        <img alt="" src="https://res.cloudinary.com/fyp202105/image/upload/v1622960411/Portfolio/Workflow.png" width="30" height="30" className="d-inline-block align-top mr-2" />
-                        Yee Choong</Navbar.Brand>
+                    <Navbar.Brand href="/" className={` ${mode ? "text-white" : "text-dark"} text-weight-bold text-uppercase`}>Yee Choong</Navbar.Brand>
                     <Navbar.Toggle aria-controls='responsive-navbar-nav' />
                     <Navbar.Collapse id='responsive-navbar-nav'>
                         <Nav className="ml-auto">

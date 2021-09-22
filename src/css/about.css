@@ -48,14 +48,14 @@
     background: linear-gradient(60deg, #9fa4c4, #b3cdd1, #aacaef, #fde7f9);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
-    height: 100vh;
+    height: 80vh;
 }
 
 .backgroundImg-dark {
     background: linear-gradient(60deg, #28313B, #485461, #2a5470, #4c4177);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
-    height: 100vh;
+    height: 80vh;
 }
 
 @keyframes gradient {
@@ -80,9 +80,14 @@
     font-weight: bold;
 }
 
-.college-link-light:hover,
+.college-link-light:hover {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.555);
+}
+
 .college-link-dark:hover {
     text-decoration: none;
+    color: rgba(245, 245, 245, 0.63);
 }
 
 .name-label-dark {
@@ -113,11 +118,25 @@
     }
     .button {
         font-size: 0.7rem !important;
-        padding: 0.5rem 1rem;
     }
 }
 
 @media screen and (min-height: 551px) and (max-height:700px) {
+    .p-index {
+        font-size: 1.1em;
+        font-weight: 300;
+        margin-bottom: 20px;
+    }
+    .backgroundImg-light,
+    .backgroundImg-dark {
+        height: 110vh;
+    }
+    .button {
+        font-size: 0.7rem !important;
+    }
+}
+
+@media screen and (min-height: 701px) and (max-height:900px) {
     .p-index {
         font-size: 1.25em;
         font-weight: 300;
@@ -125,14 +144,14 @@
     }
     .backgroundImg-light,
     .backgroundImg-dark {
-        height: 100vh;
+        height: 80vh;
     }
     .button {
-        font-size: 1rem !important;
+        font-size: 0.7rem !important;
     }
 }
 
-@media screen and (min-height: 701px) and (max-height:900px) {
+@media screen and (min-height: 901px) {
     .p-index {
         font-size: 1.5em;
         font-weight: 300;
@@ -140,22 +159,7 @@
     }
     .backgroundImg-light,
     .backgroundImg-dark {
-        height: 95vh;
-    }
-    .button {
-        font-size: 1rem !important;
-    }
-}
-
-@media screen and (min-height: 901px) {
-    .p-index {
-        font-size: 2em;
-        font-weight: 300;
-        margin-bottom: 30px;
-    }
-    .backgroundImg-light,
-    .backgroundImg-dark {
-        height: 90vh;
+        height: 81vh;
     }
     .button {
         font-size: 1rem !important;

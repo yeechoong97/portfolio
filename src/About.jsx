@@ -6,7 +6,7 @@ const About = () => {
 
     const mode = useSelector((state) => state.darkMode.value)
     return (
-        <div style={{ paddingTop: "56px" }}>
+        <div>
             <div className={mode ? "backgroundImg-dark" : "backgroundImg-light"}>
                 <div className="container py-5">
                     <div className={`${mode ? "avatar-dark" : "avatar-light"}  py-2`} style={{ backgroundImage: `url("https://res.cloudinary.com/fyp202105/image/upload/v1622960251/Portfolio/Profile.jpg")` }}></div>
