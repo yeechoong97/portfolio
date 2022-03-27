@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import './css/resume.css';
+import '../css/resume.css';
 
 function Project() {
 

@@ -1,11 +1,11 @@
 import React from 'react';
-import NavMenu from './NavMenu';
-import Footer from './Footer';
+import NavMenu from './components/NavMenu';
+import Footer from './components/Footer';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Route, Switch } from 'react-router-dom';
-import About from './About';
-import Resume from './Resume';
-import Project from './Project';
+import About from './screens/About';
+import Resume from './screens/Resume';
+import Project from './screens/Project';
 
 
 const App = () => {
@@ -18,7 +18,7 @@ const App = () => {
                     <Route path="/resume" component={Resume} />
                     <Route path="/projects" component={Project} />
                 </Switch>
-                <Footer />
+                {/* <Footer /> */}
             </div>
         </Router>
     );

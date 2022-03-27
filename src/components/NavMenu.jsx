@@ -2,24 +2,22 @@ import React from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import Switch from 'react-switch';
 import { useSelector, useDispatch } from 'react-redux';
-import { update } from './app/toggleMode';
+import { update } from '../app/toggleMode';
 
 const NavMenu = () => {
 
     const mode = useSelector((state) => state.darkMode.value)
     const dispatch = useDispatch()
 
-
-
     return (
         <div>
-            <Navbar collapseOnSelect expand='md' bg={mode ? 'dark' : 'light'} variant={mode ? 'dark' : 'light'} style={{ fontFamily: "Cabin,Helvetica Neue,Helvetica,Arial,sans-serif" }}>
+            <Navbar collapseOnSelect expand='md' bg={mode ? 'dark' : 'light'} variant={mode ? 'dark' : 'light'}>
                 <Container>
                     <Navbar.Brand href="/" className={` ${mode ? "text-white" : "text-dark"} text-weight-bold text-uppercase`}>Yee Choong</Navbar.Brand>
                     <Navbar.Toggle aria-controls='responsive-navbar-nav' />
-                    <Navbar.Collapse id='responsive-navbar-nav'>
+                    <Navbar.Collapse id='responsive-navbar-nav' className="justify-content-end">
                         <Nav className="ml-auto">
-                            <Nav.Link href='/' className={mode ? '' : 'text-dark'}>About Me</Nav.Link>
+                            <Nav.Link href='/' className={mode ? '' : 'text-dark'} >About Me</Nav.Link>
                             <Nav.Link href='/resume' className={mode ? '' : 'text-dark'}>Resume</Nav.Link>
                             <Nav.Link href='/projects' className={mode ? '' : 'text-dark'}>Projects</Nav.Link>
                             <Switch checked={mode} onChange={() => dispatch(update())} uncheckedIcon={<div

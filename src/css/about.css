@@ -23,12 +23,12 @@
 .about-me {
     max-width: 800px;
     margin: 0 auto;
+    /* color: whitesmoke */
 }
 
 .p-index {
     font-size: 1.5em;
     font-weight: 300;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-bottom: 30px;
 }
 
