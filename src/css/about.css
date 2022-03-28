@@ -9,7 +9,8 @@
     border: 3px solid white;
 }
 
-.avatar-light {
+
+/* .avatar-light {
     width: 150px;
     height: 150px;
     background-size: cover;
@@ -18,7 +19,52 @@
     border-radius: 100px;
     margin-bottom: 30px;
     border: 3px solid #212529;
+} */
+
+
+/* New CSS */
+
+.phone-frame {
+    width: 300px;
+    height: 610px;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+
+.battery {
+    width: 20px;
+    height: 20px;
+}
+
+.avatar-light {
+    width: 80px;
+    height: 80px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg-active {
+    background-color: #4dd4ac;
+}
+
+.bg-facebook {
+    background-color: #3b5999;
+}
+
+.bg-github {
+    background-color: #333333;
+}
+
+.bg-instagram {
+    background-color: #e1306c;
+}
+
+.bg-linkedin {
+    background-color: #0077b5;
+}
+
+
+/* End of new CSS */
 
 .about-me {
     max-width: 800px;
