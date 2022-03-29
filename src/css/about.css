@@ -29,6 +29,7 @@
     height: 610px;
     background-size: cover;
     background-repeat: no-repeat;
+    z-index: 100;
 }
 
 .battery {
@@ -94,7 +95,7 @@
     background: linear-gradient(60deg, #9fa4c4, #b3cdd1, #aacaef, #fde7f9);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
-    height: 80vh;
+    height: 94vh;
 }
 
 .backgroundImg-dark {
@@ -152,7 +153,8 @@
     color: #212529;
 }
 
-@media screen and (min-height: 100px) and (max-height:550px) {
+
+/* @media screen and (min-height: 100px) and (max-height:550px) {
     .p-index {
         font-size: 1em;
         font-weight: 300;
@@ -225,8 +227,10 @@
     .button {
         font-size: 0.7rem !important;
         padding: 0.5rem 1rem;
-    }
-}
+    } */
+
+
+/* } */
 
 .button {
     pointer-events: auto;

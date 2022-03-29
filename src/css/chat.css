@@ -1,15 +1,16 @@
-.typewriter .message-content {
+.message-content {
     overflow: hidden;
     /* Ensures the content is not revealed until the animation */
     border-right: .15em solid rgb(165, 165, 165);
     /* The typwriter cursor */
     white-space: nowrap;
     /* Keeps the content on a single line */
-    margin: 0 auto;
+    /* margin: 0 auto; */
     /* Gives that scrolling effect as the typing happens */
     letter-spacing: .15em;
     /* Adjust as needed */
     animation: typing 3.5s steps(40, start), blink-caret .75s step-start infinite;
+    max-width: 150px;
 }
 
 

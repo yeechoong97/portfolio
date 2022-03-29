@@ -17,8 +17,8 @@ const ChatSection = ({ mode }) => {
     return (
         <div className="d-flex flex-row position-relative py-2 px-4 align-items-center justify-content-between border-top">
             <div className="d-flex flex-row p-1 w-100">
-                <div className="p-2 me-2 rounded-3 shadow-sm typewriter" style={TypingStye}>
-                    <div className="text-start fs-6 fw-light message-content">Tell me more.....</div>
+                <div className="p-2 me-2 rounded-3 shadow-sm" style={TypingStye}>
+                    <div className="text-start fs-6 fw-light message-content ">Tell me more......</div>
                 </div>
             </div>
             <div>
