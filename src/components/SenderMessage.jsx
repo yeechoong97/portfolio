@@ -27,7 +27,7 @@ const SenderMessage = ({ mode, message }) => {
         <div className="p-3 me-5 mt-3 mb-3 align-self-end rounded-3 position-relative" style={MessageStyle}>
             <img src="https://img.icons8.com/external-anggara-filled-outline-anggara-putra/32/000000/external-avatar-interface-anggara-filled-outline-anggara-putra.png" style={AvatarStyle} />
             <div style={LabelStyle} className="text-secondary">You</div>
-            <div className="text-start">{message}</div>
+            <div className={`text-start ${message == " " ? "loading" : ""}`}>{message}</div>
         </div>
 
     )

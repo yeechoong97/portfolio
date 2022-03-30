@@ -11,7 +11,7 @@ const NavMenu = () => {
 
     return (
         <div>
-            <Navbar collapseOnSelect expand='md' bg={mode ? 'dark' : 'light'} variant={mode ? 'dark' : 'light'}>
+            <Navbar collapseOnSelect expand='md' bg={mode ? 'dark' : 'light'} variant={mode ? 'dark' : 'light'} style={{ zIndex: 100 }}>
                 <Container>
                     <Navbar.Brand href="/" className={` ${mode ? "text-white" : "text-dark"} text-weight-bold text-uppercase`}>Yee Choong</Navbar.Brand>
                     <Navbar.Toggle aria-controls='responsive-navbar-nav' />
