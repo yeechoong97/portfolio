@@ -20,7 +20,7 @@ const NavMenu = () => {
                             <Nav.Link href='/' className={mode ? '' : 'text-dark'} >About Me</Nav.Link>
                             <Nav.Link href='/resume' className={mode ? '' : 'text-dark'}>Resume</Nav.Link>
                             <Nav.Link href='/projects' className={mode ? '' : 'text-dark'}>Projects</Nav.Link>
-                            <Switch checked={mode} onChange={() => dispatch(update())} uncheckedIcon={<div
+                            {/* <Switch checked={mode} onChange={() => dispatch(update())} uncheckedIcon={<div
                                 style={{
                                     display: "flex",
                                     justifyContent: "center",
@@ -40,7 +40,7 @@ const NavMenu = () => {
                                         color: "orange",
                                         paddingRight: 2
                                     }}>🌙</div>}
-                                onColor={"#808080"} offColor={"#808080"} className="mx-1 my-1" />
+                                onColor={"#808080"} offColor={"#808080"} className="mx-1 my-1" /> */}
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

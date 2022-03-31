@@ -1,6 +1,6 @@
 import React from 'react'
 
-const SenderMessage = ({ mode, message }) => {
+const SenderMessage = ({ message }) => {
 
     const AvatarStyle = {
         position: "absolute",

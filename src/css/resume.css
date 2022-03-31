@@ -1,4 +1,15 @@
-        .highlight-box-dark {
+.top-index {
+    z-index: 100;
+}
+
+.title-border {
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    background-color: #e9ecef;
+}
+
+
+/* .highlight-box-dark {
             box-shadow: 0 1px 10px rgba(0, 0, 0, .6);
             border-radius: 1rem;
             overflow: hidden;
@@ -308,4 +319,4 @@
             100% {
                 background-position: 0% 50%;
             }
-        }
+        } */

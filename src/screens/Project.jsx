@@ -1,14 +1,29 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
+import BackgroundEffect from '../components/BackgroundEffect';
 import '../css/resume.css';
+import VMS from '../VMS.png';
+
 
 function Project() {
 
     const mode = useSelector((state) => state.darkMode.value)
 
     return (
-        <div>
-            <section className={mode ? "backgroundImg-resume-dark pb-2" : "backgroundImg-resume-light pb-2"}>
+        <div className="backgroundImg-light">
+            <BackgroundEffect />
+            <div className="py-5 px-5 d-flex align-items-center justify-content-evenly h-100 w-100">
+                <div className="w-25 h-50 d-flex flex-column rounded-3 shadow-lg bg-white rounded-3 top-index">
+                    <img src={VMS} className="h-75 rounded-top  " />
+                    <div className='border-top border-2 rounded-bottom title-border h-25 text-dark text-center fs-5'>Volunter Management System</div>
+                </div>
+                <div className="bg-light w-25 h-50 d-flex flex-column rounded-3 shadow-lg">
+                    <img src={VMS} className="rounded-3 border-bottom h-75" />
+                    <div className='bg-dark h-25 rounded-3 text-white text-center'>Volunter Management System</div>
+                </div>
+
+            </div>
+            {/* <section className={mode ? "backgroundImg-resume-dark pb-2" : "backgroundImg-resume-light pb-2"}>
                 <div className="container">
                     <div className="w-75 mx-auto text-center">
                         <label className={mode ? "page-title-dark pt-4" : "page-title-light pt-4"}><img alt="" src="https://res.cloudinary.com/fyp202105/image/upload/v1622960477/Portfolio/ProjectIcon.png" width="30" height="30" className="d-inline-block mr-2 mb-1" />Projects</label>
@@ -52,7 +67,7 @@ function Project() {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
         </div>
     );
 }

@@ -2,7 +2,7 @@ import React from 'react';
 import NavMenu from './components/NavMenu';
 import Footer from './components/Footer';
 import { BrowserRouter as Router } from 'react-router-dom';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import About from './screens/About';
 import Resume from './screens/Resume';
 import Project from './screens/Project';
@@ -13,11 +13,11 @@ const App = () => {
         <Router>
             <div>
                 <NavMenu />
-                <Switch>
-                    <Route exact path="/" component={About} />
-                    <Route path="/resume" component={Resume} />
-                    <Route path="/projects" component={Project} />
-                </Switch>
+                <Routes>
+                    <Route exact path="/" element={<About />} />
+                    <Route path="/resume" element={<Resume />} />
+                    <Route path="/projects" element={<Project />} />
+                </Routes>
                 {/* <Footer /> */}
             </div>
         </Router>

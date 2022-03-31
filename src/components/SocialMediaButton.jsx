@@ -1,6 +1,6 @@
 import React from 'react'
 import '../css/about.css';
-import urlContents from '../data.js';
+import { urlContents } from '../data.js';
 
 const SocialMediaButton = ({ top, firstBtn, secondBtn }) => {
 

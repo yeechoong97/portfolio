@@ -24,4 +24,13 @@ const urlContents = [{
     },
 ]
 
-export default urlContents
+const conversation = [
+    "Hi there. Nice to meet you ! 😊",
+    "Hi Yee Choong 😁. Where did you completed your degree?",
+    "I'm completed my Software Engineering degree in Universiti Tunku Abdul Rahman (UTAR)",
+    "Sounds good. Then what is your current interest in IT industry?",
+    "I'm interested in Mobile App Development and also Backend Development",
+    " ",
+]
+
+export { urlContents, conversation }
