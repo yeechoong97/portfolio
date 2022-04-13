@@ -5,7 +5,7 @@ import { urlContents } from '../data.js';
 const SocialMediaButton = ({ top, firstBtn, secondBtn }) => {
 
     const firstButtonData = urlContents.find(element => element.name === firstBtn);
-    const secondButtonData = urlContents.find(element => element.name === secondBtn)
+    const secondButtonData = urlContents.find(element => element.name === secondBtn);
 
     return (
         <>

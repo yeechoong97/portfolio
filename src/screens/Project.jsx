@@ -1,11 +1,10 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import BackgroundEffect from '../components/BackgroundEffect';
-import '../css/resume.css';
-import VMS from '../VMS.png';
-import FYP from '../FYP.png';
+import '../css/project.css';
 import FadeIn from 'react-fade-in/lib/FadeIn';
-import { Fade } from 'react-bootstrap';
+import { projects } from "../data";
+import ProjectCard from '../components/ProjectCard';
 
 
 function Project() {
@@ -15,24 +14,11 @@ function Project() {
     return (
         <div className="backgroundImg-light">
             <BackgroundEffect />
-            {/* <FadeIn className='h-100 w-100'> */}
-            <div className="d-flex flex-row align-items-center justify-content-evenly h-100 w-100 container flex-wrap">
-                <div className="d-flex flex-column top-index p-4 m-5">
-                    <img src={VMS} className="h-75 img-border border" />
-                    <div className='border-2 h-25 d-flex flex-column justify-content-center align-items-start px-2'>
-                        <div className="text-dark text-start fw-bold fs-5">Volunter Management System</div>
-                        <div className="text-start fs-6 py-1 rounded-pill text-muted">Web application</div>
-                    </div>
-                </div>
-                <div className="d-flex flex-column top-index p-4 m-5">
-                    <img src={FYP} className="h-75 img-border border" />
-                    <div className='border-2 h-25 d-flex flex-column justify-content-center align-items-start px-2'>
-                        <div className="text-dark text-start fw-bold fs-5 ">Volunter Management System</div>
-                        <div className="text-start fs-6 py-1 rounded-pill text-muted">Web application</div>
-                    </div>
-                </div>
+            <div className="d-flex flex-row align-items-center justify-content-evenly h-100 w-100 container flex-wrap gap-5">
+                {projects.map(project =>
+                    <ProjectCard project={project} key={project.title} />
+                )}
             </div>
-            {/* </FadeIn> */}
         </div>
         /* <section className={mode ? "backgroundImg-resume-dark pb-2" : "backgroundImg-resume-light pb-2"}>
             <div className="container">
