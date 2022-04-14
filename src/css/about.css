@@ -82,7 +82,7 @@
     background: linear-gradient(60deg, #9fa4c4, #b3cdd1, #aacaef, #fde7f9);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
-    height: 94vh;
+    height: 100vh;
 }
 
 .backgroundImg-dark {

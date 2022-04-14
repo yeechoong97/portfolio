@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { useSelector } from 'react-redux';
 import BackgroundEffect from '../components/BackgroundEffect';
 import ChatComponent from '../components/ChatComponent';
 import PhoneComponent from '../components/PhoneComponent';
@@ -12,7 +11,6 @@ const About = () => {
     useEffect(() => {
     }, [next]);
 
-    const mode = useSelector((state) => state.darkMode.value)
     return (
         <div>
             <div className="backgroundImg-light">

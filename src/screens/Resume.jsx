@@ -1,5 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
+import BackgroundEffect from '../components/BackgroundEffect';
 import '../css/resume.css';
 
 const Resume = () => {
@@ -7,12 +8,20 @@ const Resume = () => {
     const mode = useSelector((state) => state.darkMode.value)
 
     return (
-        <div>
-            <section className={mode ? "backgroundImg-resume-dark pb-2" : "backgroundImg-resume-light pb-2"} >
-                <div className="container ">
-                    <div className="w-50 mx-auto text-center pt-4">
-                        <label className={mode ? "page-title-dark" : "page-title-light"}><img alt="" src="https://res.cloudinary.com/fyp202105/image/upload/v1622960653/Portfolio/ResumeIcon.png" width="30" height="30" className="d-inline-block mr-2 mb-1" />Resume</label>
+        <>
+            <div className="backgroundImg-light">
+                <BackgroundEffect />
+                <div className='container d-flex flex-column justify-content-center align-items-center h-100 '>
+                    <div className="rounded-3 border shadow w-50 h-50 bg-white d-flex flex-column justify-content-start align-item-center main">
+                        <div className='border-bottom p-2 fs-5'>
+                            <i class="fa-solid fa-square text-primary mx-1"></i>
+                            <strong class="text-muted mx-1 fs-6">Education</strong>
+                        </div>
                     </div>
+                </div>
+            </div>
+            {/* <section className={mode ? "backgroundImg-resume-dark pb-2" : "backgroundImg-resume-light pb-2"} >
+                <div className="container ">
                     <div className="row w-60 mx-auto mt-5">
                         <h3 className={`${mode ? "text-white" : "text-dark"}  col-sm-3 px-0 adjust-font`}>Education</h3>
                         <div className="col-sm-3 px-0">
@@ -89,8 +98,9 @@ const Resume = () => {
                         </div>
                     </div>
                 </div>
-            </section>
-        </div >
+            </section> */}
+            {/* </div > */}
+        </>
     );
 }
 
