@@ -5,22 +5,22 @@ const FloatingAction = () => {
 
     return (
         <>
-            <div class="floating-container">
-                <div class="floating-button"><i class="fa-solid fa-bars"></i></div>
-                <div class="element-container">
+            <div className="floating-container">
+                <div className="floating-button"><i className="fa-solid fa-bars"></i></div>
+                <div className="element-container">
                     <a href="/" title="About Me">
-                        <span class="float-element about">
-                            <i class="fa-solid fa-user-graduate"></i>
+                        <span className="float-element about">
+                            <i className="fa-solid fa-user-graduate"></i>
                         </span>
                     </a>
                     <a href="/resume" title="Resume">
-                        <span class="float-element resume" >
-                            <i class="fa-solid fa-file-lines"></i>
+                        <span className="float-element resume" >
+                            <i className="fa-solid fa-file-lines"></i>
                         </span>
                     </a>
                     <a href="/projects" title="Projects">
-                        <span class="float-element project">
-                            <i class="fa-solid fa-list-check"></i>
+                        <span className="float-element project">
+                            <i className="fa-solid fa-list-check"></i>
                         </span>
                     </a>
                 </div>

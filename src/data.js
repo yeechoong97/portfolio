@@ -83,4 +83,37 @@ const projects = [{
     image: "./FYP.png",
 }]
 
-export { urlContents, conversation, iconPack, projects }
+const education = [{
+    university: "Asia Pacific University (APU)",
+    year: "2015 - 2017",
+    course: "Diploma in Information and Communications Technology Specialism in Software Engineering",
+    cgpa: "3.76",
+    hyperlink: "https://new.apu.edu.my/",
+    achievements: [
+        { title: "Null", duration: " " }
+    ]
+}, {
+    university: "University Tunku Abdul Rahman (UTAR)",
+    year: "2018 - 2021",
+    course: "Bachelor of Science (Hons) Software Engineering",
+    cgpa: "3.39",
+    hyperlink: "https://www.utar.edu.my/",
+    achievements: [{
+            title: "Participant of Microsoft Insider Dev Tour Kuala Lumpur 2019",
+            duration: "22 June 2019"
+        }, {
+            title: "Committee, 24 Festive Drum Unit",
+            duration: "2019 - 2020",
+        },
+        {
+            title: "Auditor, 24 Festive Drum Unit",
+            duration: "2020 - 2021",
+        },
+        {
+            title: "Dean List",
+            duration: "May 2020",
+        },
+    ]
+}]
+
+export { urlContents, conversation, iconPack, projects, education }

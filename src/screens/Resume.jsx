@@ -1,6 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import BackgroundEffect from '../components/BackgroundEffect';
+import EducationComponent from '../components/EducationComponent';
 import '../css/resume.css';
 
 const Resume = () => {
@@ -11,11 +12,24 @@ const Resume = () => {
         <>
             <div className="backgroundImg-light">
                 <BackgroundEffect />
-                <div className='container d-flex flex-column justify-content-center align-items-center h-100 '>
-                    <div className="rounded-3 border shadow w-50 h-50 bg-white d-flex flex-column justify-content-start align-item-center main">
-                        <div className='border-bottom p-2 fs-5'>
-                            <i class="fa-solid fa-square text-primary mx-1"></i>
-                            <strong class="text-muted mx-1 fs-6">Education</strong>
+                <div className='container d-flex flex-column justify-content-center align-items-center h-100 p-5'>
+                    <div className="rounded-3 border shadow w-100 h-75 bg-container d-flex flex-column justify-content-start align-item-center main">
+                        <div className='border-bottom p-2 fs-5 bg-light'>
+                            <div className='d-flex flex-row justify-content-between align-items-center'>
+                                <div>
+                                    <i className="fa-solid fa-square text-success mx-1"></i>
+                                    <strong className="text-muted mx-1 fs-6">Education</strong>
+                                </div>
+                                <div>
+                                    <i className="fa-solid fa-circle-chevron-left text-danger px-1" role="button" ></i>
+                                    <i className="fa-solid fa-circle-chevron-right text-primary px-1" role="button"></i>
+                                    <a className="fa-solid fa-cloud-arrow-down text-muted px-2 text-decoration-none" href="/Resume.pdf" target="_blank" title="Resume" download></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="d-flex flex-column justify-content-between p-3 overflow-auto">
+                            <EducationComponent first university="APU" />
+                            <EducationComponent university="UTAR" />
                         </div>
                     </div>
                 </div>
