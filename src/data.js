@@ -61,6 +61,42 @@ const iconPack = [{
     name: "CSS",
     path: "./icons/css.png",
     link: "#"
+}, {
+    name: "React JS",
+    path: "./icons/react.png",
+    link: "https://reactjs.org/"
+}, {
+    name: "React Native",
+    path: "./icons/react.png",
+    link: "https://reactnative.dev/"
+}, {
+    name: "Java",
+    path: "./icons/java.png",
+    link: "https://www.java.com/en/"
+}, {
+    name: "C#",
+    path: "./icons/csharp.png",
+    link: "https://docs.microsoft.com/en-us/dotnet/csharp/"
+}, {
+    name: "Python",
+    path: "./icons/python.png",
+    link: "https://www.python.org/"
+}, {
+    name: "Flutter",
+    path: "./icons/flutter.png",
+    link: "https://flutter.dev/"
+}, {
+    name: "TypeScript",
+    path: "./icons/typescript.png",
+    link: "https://www.typescriptlang.org/"
+}, {
+    name: "MySQL",
+    path: "./icons/mysql.png",
+    link: "https://www.mysql.com/"
+}, {
+    name: "Firebase",
+    path: "./icons/firebase.png",
+    link: "https://firebase.google.com/"
 }]
 
 const projects = [{
@@ -70,7 +106,7 @@ const projects = [{
     year: "2019",
     summary: "This project focused on easing the jobs of CyberCare Organization adminstrator :",
     lang: ["HTML", "CSS", "PHP", "Laravel", "JavaScript"],
-    objectives: ["Keep track of programme details", "Extract data from programme", "Allocate manpower through online", "Reward volunteers based on milestones", "Notify volunteers via platform"],
+    objectives: ["Keep track of programme details", "Extract data from programme", "Allocate manpower through online", "Reward volunteers based on milestones", "Notify volunteers via platform", "Register programs and events"],
     image: "./VMS.png",
 }, {
     title: "FOREX E - Learning and Currency Exchange Simulation Platform",
@@ -116,4 +152,69 @@ const education = [{
     ]
 }]
 
-export { urlContents, conversation, iconPack, projects, education }
+const working = [{
+        title: "Mobile Tester",
+        company: "Hong Leong Bank Berhad",
+        duration: "Oct 2020 - Jan 2021",
+    },
+    {
+        title: "Cashier",
+        company: "S.Y Enterprise",
+        duration: "June 2017 - May 2018",
+    },
+    {
+        title: "Kitchen Helper",
+        company: "Ginza Japanese Restaurant",
+        duration: "Feb 2015 - May 2015",
+    },
+    {
+        title: "Portal Service",
+        company: "Big Bad Wolf",
+        duration: "Dec 2018 (2 Weeks)",
+    },
+    {
+        title: "Waiter",
+        company: "Steamboat Restaurant",
+        duration: "Oct 2015 - Dec 2015",
+    },
+]
+
+const skills = [{
+    type: "Front End",
+    languages: [
+        "React JS",
+        "HTML",
+        "CSS"
+    ]
+}, {
+    type: "Back End",
+    languages: ["NodeJS",
+        "Java",
+        "C#",
+        "PHP",
+        "Python"
+    ]
+}, {
+    type: "Mobile Dev",
+    languages: [
+        "React Native",
+        "Flutter",
+    ]
+}, {
+    type: "Others",
+    languages: [
+        "JavaScript",
+        "TypeScript",
+        "Laravel",
+    ]
+}, {
+    type: "Database",
+    languages: [
+        "MySQL",
+        "Firebase"
+    ]
+}]
+
+const resumeCategory = ["Education", "Experience", "Skills"]
+
+export { urlContents, conversation, iconPack, projects, education, working, resumeCategory, skills }

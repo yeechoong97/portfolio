@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ReceiverMessage = ({ mode, message }) => {
+const ReceiverMessage = ({ message }) => {
 
     const AvatarStyle = {
         position: "absolute",
@@ -25,7 +25,7 @@ const ReceiverMessage = ({ mode, message }) => {
 
     return (
         <div className="p-3 ms-5 mt-3 mb-3 align-self-start rounded-3 position-relative" style={MessageStyle}>
-            <img src="https://res.cloudinary.com/fyp202105/image/upload/v1622960251/Portfolio/Profile.jpg" style={AvatarStyle} className="rounded-circle" />
+            <img src="https://res.cloudinary.com/fyp202105/image/upload/v1622960251/Portfolio/Profile.jpg" style={AvatarStyle} className="rounded-circle" alt="myself" />
             <div style={LabelStyle} className="text-secondary">Yee Choong</div>
             <div className="text-start">{message}</div>
         </div>

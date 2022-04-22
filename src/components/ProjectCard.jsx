@@ -7,7 +7,7 @@ const ProjectCard = ({ project }) => {
     return (
         <>
             <div className='card shadow border-0' style={{ width: "25rem" }}>
-                <img className='card-img-top' src={`${process.env.PUBLIC_URL}${project.image}`} />
+                <img className='card-img-top' src={`${process.env.PUBLIC_URL}${project.image}`} alt={project.title} />
                 <div className='card-header border-top position-relative'>
                     <div className='fs-6 fw-bold lh-sm'>{project.title}</div>
                     <div className='fs-7 text-muted '>{project.type} <span className="badge bg-primary rounded-pill ms-1 fw-normal">{project.course}</span><span className="badge bg-success rounded-pill ms-1">{project.year}</span></div>

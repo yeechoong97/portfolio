@@ -1,5 +1,4 @@
 import React from 'react';
-import NavMenu from './components/NavMenu';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Route, Routes } from 'react-router-dom';
 import About from './screens/About';
@@ -12,7 +11,6 @@ const App = () => {
     return (
         <Router>
             <div className="position-relative">
-                {/* <NavMenu /> */}
                 <Routes>
                     <Route exact path="/" element={<About />} />
                     <Route path="/resume" element={<Resume />} />

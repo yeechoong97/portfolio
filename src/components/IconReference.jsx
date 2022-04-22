@@ -1,5 +1,5 @@
 import React from 'react'
-import { iconPack, urlContents } from '../data'
+import { iconPack } from '../data'
 
 const IconReference = ({ IconName }) => {
 
@@ -16,7 +16,12 @@ const IconReference = ({ IconName }) => {
 
     return (
         <>
-            <a href={SelectedIcon.link} target='_blank' rel="noreferrer" style={IconType}></a>
+            {
+                SelectedIcon.link === "#" ?
+                    (<a href={SelectedIcon.link} rel="noreferrer" style={IconType}></a>) :
+                    <a href={SelectedIcon.link} target='_blank' rel="noreferrer" style={IconType}></a>
+            }
+
         </>
     )
 }

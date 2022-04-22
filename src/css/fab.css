@@ -58,7 +58,7 @@ body {
     height: 100px;
     bottom: 0;
     right: 0;
-    margin: 35px 25px;
+    margin: 35px 5px;
 }
 
 .floating-container:hover {
@@ -102,7 +102,7 @@ body {
     line-height: 65px;
     text-align: center;
     font-size: 23px;
-    z-index: 100;
+    z-index: 200;
     box-shadow: 0 10px 25px -5px rgba(44, 179, 240, 0.6);
     cursor: pointer;
     -webkit-transition: all 0.3s;
