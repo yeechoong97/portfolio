@@ -1,24 +1,22 @@
 import React from 'react';
-import NavMenu from './NavMenu';
-import Footer from './Footer';
 import { BrowserRouter as Router } from 'react-router-dom';
-import { Route, Switch } from 'react-router-dom';
-import About from './About';
-import Resume from './Resume';
-import Project from './Project';
+import { Route, Routes } from 'react-router-dom';
+import About from './screens/About';
+import Resume from './screens/Resume';
+import Project from './screens/Project';
+import FloatingAction from './components/FloatingAction';
 
 
 const App = () => {
     return (
         <Router>
-            <div>
-                <NavMenu />
-                <Switch>
-                    <Route exact path="/" component={About} />
-                    <Route path="/resume" component={Resume} />
-                    <Route path="/projects" component={Project} />
-                </Switch>
-                <Footer />
+            <div className="position-relative">
+                <FloatingAction />
+                <Routes>
+                    <Route exact path="/" element={<About />} />
+                    <Route path="/resume" element={<Resume />} />
+                    <Route path="/projects" element={<Project />} />
+                </Routes>
             </div>
         </Router>
     );
