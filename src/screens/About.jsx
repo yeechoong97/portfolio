@@ -15,12 +15,8 @@ const About = () => {
         <div>
             <div className="backgroundImg-light">
                 <BackgroundEffect />
-                <div className="container py-5 d-flex flex-column justify-content-center align-items-center h-100 main">
-                    {next ? (
-                        <ChatComponent setNext={setNext} />
-                    ) : (
-                        <PhoneComponent setNext={setNext} />
-                    )}
+                <div className="container py-5 d-flex flex-column justify-content-center align-items-center h-100">
+                    {next ? (<ChatComponent setNext={setNext} />) : (<PhoneComponent setNext={setNext} />)}
                 </div>
             </div>
         </div >

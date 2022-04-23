@@ -11,12 +11,12 @@ const App = () => {
     return (
         <Router>
             <div className="position-relative">
+                <FloatingAction />
                 <Routes>
                     <Route exact path="/" element={<About />} />
                     <Route path="/resume" element={<Resume />} />
                     <Route path="/projects" element={<Project />} />
                 </Routes>
-                <FloatingAction />
             </div>
         </Router>
     );

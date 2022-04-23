@@ -29,7 +29,7 @@ const conversation = [
     "Hi Yee Choong 😁. Where did you completed your degree?",
     "I'm completed my Software Engineering degree in Universiti Tunku Abdul Rahman (UTAR)",
     "Sounds good. Then what is your current interest in IT industry?",
-    "I'm interested in Mobile App Development and also Backend Development",
+    "I'm interested in Mobile App development and also Backend development",
     " ",
 ]
 
@@ -106,7 +106,7 @@ const projects = [{
     year: "2019",
     summary: "This project focused on easing the jobs of CyberCare Organization adminstrator :",
     lang: ["HTML", "CSS", "PHP", "Laravel", "JavaScript"],
-    objectives: ["Keep track of programme details", "Extract data from programme", "Allocate manpower through online", "Reward volunteers based on milestones", "Notify volunteers via platform", "Register programs and events"],
+    objectives: ["Keep track of programme details", "Extract data from programme", "Allocate manpower through online", "Reward volunteers based on milestones", "Notify volunteers via platform", "Register programmes and events"],
     image: "./VMS.png",
 }, {
     title: "FOREX E - Learning and Currency Exchange Simulation Platform",

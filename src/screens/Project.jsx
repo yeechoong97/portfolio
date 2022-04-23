@@ -11,7 +11,7 @@ function Project() {
     return (
         <div className="backgroundImg-light">
             <BackgroundEffect />
-            <div className="d-flex flex-row align-items-center justify-content-evenly h-100 w-100 container flex-wrap gap-5 px-5">
+            <div className="d-flex flex-row align-items-center justify-content-evenly h-100 w-100 container flex-wrap gap-5 p-5 overflow-auto">
                 {projects.map(project =>
                     <ProjectCard project={project} key={project.title} />
                 )}

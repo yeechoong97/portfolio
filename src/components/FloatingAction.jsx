@@ -5,25 +5,16 @@ const FloatingAction = () => {
 
     return (
         <>
-            <div className="floating-container">
-                <div className="floating-button"><i className="fa-solid fa-bars"></i></div>
-                <div className="element-container">
-                    <a href="/" title="About Me">
-                        <span className="float-element about">
-                            <i className="fa-solid fa-user-graduate"></i>
-                        </span>
-                    </a>
-                    <a href="/resume" title="Resume">
-                        <span className="float-element resume" >
-                            <i className="fa-solid fa-file-lines"></i>
-                        </span>
-                    </a>
-                    <a href="/projects" title="Projects">
-                        <span className="float-element project">
-                            <i className="fa-solid fa-list-check"></i>
-                        </span>
-                    </a>
-                </div>
+            <div className="d-flex flex-row justify-content-evenly px-1 py-2 bg-floating fixed-top w-100 rounded-bottom-only">
+                <a href="/" title="About Me" className="float-element about text-decoration-none mx-4" role="button">
+                    <i className="fa-solid fa-user-graduate"></i>
+                </a>
+                <a href="/resume" title="Resume" className="float-element resume text-decoration-none mx-4" role="button">
+                    <i className="fa-solid fa-file-lines"></i>
+                </a>
+                <a href="/projects" title="Projects" className="float-element project text-decoration-none mx-4" role="button">
+                    <i className="fa-solid fa-list-check"></i>
+                </a>
             </div>
         </>
     )
