@@ -9,7 +9,7 @@ import { conversation } from '../data.js'
 const ChatComponent = ({ setNext }) => {
     return (
         <>
-            <FadeIn>
+            <FadeIn className='pt-5'>
                 < div className={`about-me`}>
                     <div className={`bg-white mb-5 text-center rounded-3 d-flex flex-column position-relative shadow-lg`}>
                         <Header onClick={() => setNext(false)} />
