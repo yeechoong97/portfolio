@@ -1,13 +1,8 @@
-import React, { FunctionComponent } from 'react'
+import { FunctionComponent } from 'react'
 import { resumeCategory } from '../data'
+import { ResumeHeaderProps } from '../types'
 
-type Props = {
-    currentIndex: number,
-    navigatePage: React.Dispatch<React.SetStateAction<number>>;
-}
-
-const ResumeHeader: FunctionComponent<Props> = ({ currentIndex, navigatePage }) => {
-
+const ResumeHeader: FunctionComponent<ResumeHeaderProps> = ({ currentIndex, navigatePage }) => {
 
     return (
         <>

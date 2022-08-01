@@ -3,12 +3,9 @@ import { useNavigate } from 'react-router-dom';
 import RowButton from './RowButton';
 import SocialMediaButton from './SocialMediaButton';
 import iphoneFrame from '../iphone.png';
+import { ChatProps } from '../types';
 
-type Props = {
-    setNext: React.Dispatch<React.SetStateAction<boolean>>;
-}
-
-const PhoneComponent: FunctionComponent<Props> = ({ setNext }) => {
+const PhoneComponent: FunctionComponent<ChatProps> = ({ setNext }) => {
 
     const navigate = useNavigate();
 

@@ -1,10 +1,9 @@
-import { FunctionComponent, MouseEventHandler } from 'react'
+import { FunctionComponent } from 'react'
+import { HeaderProps } from '../types'
 
-type Props = {
-    onClick: MouseEventHandler<HTMLDivElement>
-}
 
-const Header: FunctionComponent<Props> = ({ onClick }) => {
+
+const Header: FunctionComponent<HeaderProps> = ({ onClick }) => {
 
     const ChevronStyle = {
         height: "40px",

@@ -1,16 +1,14 @@
-import React, { FunctionComponent } from 'react'
+import { FunctionComponent } from 'react'
 import FadeIn from 'react-fade-in/lib/FadeIn';
 import ReceiverMessage from './ReceiverMessage';
 import SenderMessage from './SenderMessage';
 import Header from './Header';
 import ChatSection from './ChatSection';
 import { conversation } from '../data.js'
+import { ChatProps } from '../types';
 
-type Props = {
-    setNext: React.Dispatch<React.SetStateAction<boolean>>;
-}
 
-const ChatComponent: FunctionComponent<Props> = ({ setNext }) => {
+const ChatComponent: FunctionComponent<ChatProps> = ({ setNext }) => {
     return (
         <>
             <FadeIn className='pt-5'>

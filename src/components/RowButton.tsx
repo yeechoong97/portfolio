@@ -1,13 +1,9 @@
-import { FunctionComponent, MouseEventHandler } from 'react'
+import { FunctionComponent } from 'react'
 import '../css/about.css';
+import { RowButtonProps } from '../types';
 
-type Props = {
-    onClick: MouseEventHandler<HTMLDivElement>,
-    active?: boolean,
-    title: string
-}
 
-const RowButton: FunctionComponent<Props> = ({ title, active, onClick }) => {
+const RowButton: FunctionComponent<RowButtonProps> = ({ title, active, onClick }) => {
     return (
         <>
             <div className={`${active ? "bg-active" : "bg-light"} rounded-3 shadow w-75 align-self-center my-1 d-flex flex-row justify-content-between row-btn`} onClick={onClick}>

@@ -1,14 +1,9 @@
 import { FunctionComponent } from 'react';
 import '../css/about.css';
 import { urlContents } from '../data.js';
+import { SocialMediaButtonProps } from '../types';
 
-type Props = {
-    top?: boolean,
-    firstBtn: string,
-    secondBtn: string
-}
-
-const SocialMediaButton: FunctionComponent<Props> = ({ top, firstBtn, secondBtn }) => {
+const SocialMediaButton: FunctionComponent<SocialMediaButtonProps> = ({ top, firstBtn, secondBtn }) => {
 
     const firstButtonData = urlContents.find(element => element.name === firstBtn);
     const secondButtonData = urlContents.find(element => element.name === secondBtn);

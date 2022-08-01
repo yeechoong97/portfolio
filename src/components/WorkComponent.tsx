@@ -1,11 +1,12 @@
 import { FunctionComponent } from 'react'
 import { working } from '../data'
+import { Experience } from '../types'
 
 const WorkComponent: FunctionComponent = () => {
     return (
         <>
             {
-                working.map((experience, index) =>
+                working.map((experience: Experience, index: number) =>
                     <div className={`bg-white rounded-2 p-3 w- shadow-sm ${index === 0 ? "" : "mt-3"}`} key={experience.title}>
                         <div className='d-flex flex-column justify-content-center px-2 py-1'>
                             <strong className="fs-5 text-primary">{experience.title}</strong>

@@ -1,11 +1,12 @@
-import { FunctionComponent } from 'react'
+import { FunctionComponent } from 'react';
+import { University, Achievements } from '../types';
 import { education } from '../data'
 
 const EducationComponent: FunctionComponent = () => {
     return (
         <>
             {
-                education.map((selectedUniversity, index) =>
+                education.map((selectedUniversity: University, index: number) =>
                     <div className={`bg-white rounded-2 p-3 w-100 shadow-sm ${index === 0 ? "" : "mt-5"}`} key={selectedUniversity.university}>
                         <div className='d-flex flex-column justify-content-center px-2 py-1'>
                             <a href={selectedUniversity.hyperlink} className="fs-5 text-decoration-none fw-bold" target="_blank" rel="noreferrer">{selectedUniversity.university}</a>
@@ -17,7 +18,7 @@ const EducationComponent: FunctionComponent = () => {
                             <div className='fs-6 pt-4 d-flex flex-column justify-contents-start'>
                                 <strong>Achievements: </strong>
                                 {
-                                    selectedUniversity.achievements.map(item =>
+                                    selectedUniversity.achievements.map((item: Achievements) =>
                                         <div className='d-flex flex-row justify-contents-start align-items-center' key={item.title}>
                                             <i className="fa-solid fa-star pe-2 text-warning"></i>
                                             <div className='pt-1'>{item.title}<small className='px-2 fs-8 text-muted'>{item.duration}</small></div>

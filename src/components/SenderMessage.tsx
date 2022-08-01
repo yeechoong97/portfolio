@@ -1,10 +1,7 @@
 import React, { FunctionComponent } from 'react';
+import { MessageProps } from '../types';
 
-type Props = {
-    message: string
-}
-
-const SenderMessage: FunctionComponent<Props> = ({ message }) => {
+const SenderMessage: FunctionComponent<MessageProps> = ({ message }) => {
 
     const AvatarStyle = {
         position: "absolute",

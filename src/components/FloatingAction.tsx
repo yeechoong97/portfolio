@@ -2,7 +2,6 @@ import { FunctionComponent } from 'react'
 import "../css/fab.css"
 
 const FloatingAction: FunctionComponent = () => {
-
     return (
         <>
             <div className="d-flex flex-row justify-content-evenly px-1 py-2 bg-floating fixed-top w-100 rounded-bottom-only">

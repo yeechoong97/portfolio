@@ -1,11 +1,9 @@
 import { FunctionComponent } from 'react'
 import { iconPack } from '../data'
+import { IconProps } from '../types';
 
-type Props = {
-    IconName: string
-}
 
-const IconReference: FunctionComponent<Props> = ({ IconName }) => {
+const IconReference: FunctionComponent<IconProps> = ({ IconName }) => {
 
     const SelectedIcon = iconPack.find(element => element.name === IconName);
 

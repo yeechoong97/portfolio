@@ -1,22 +1,10 @@
 import { FunctionComponent } from 'react'
 import IconReference from './IconReference'
 import Checklist from './Checklist'
-
-type Props = {
-    project: {
-        title: string;
-        type: string;
-        course: string;
-        year: string;
-        summary: string;
-        lang: string[];
-        objectives: string[];
-        image: string;
-    }
-}
+import { ProjectProps } from '../types'
 
 
-const ProjectCard: FunctionComponent<Props> = ({ project }) => {
+const ProjectCard: FunctionComponent<ProjectProps> = ({ project }) => {
 
     return (
         <>
@@ -31,7 +19,7 @@ const ProjectCard: FunctionComponent<Props> = ({ project }) => {
                     <div className='card-text fs-summary'>{project.summary}</div>
                     <Checklist objectives={project.objectives} />
                     <div className='d-flex flex-row justify-content-evenly flex-wrap p-1 mt-3'>
-                        {project.lang.map(element =>
+                        {project.lang.map((element: string) =>
                             <IconReference IconName={element} key={element} />
                         )}
                     </div>
