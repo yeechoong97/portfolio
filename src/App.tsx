@@ -1,25 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { FunctionComponent } from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom'
 import './App.css';
+import FloatingAction from './components/FloatingAction';
+import About from './screens/About';
+import Project from './screens/Project';
+import Resume from './screens/Resume';
 
-function App() {
+const App: FunctionComponent = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="position-relative">
+        <FloatingAction />
+        <Routes>
+          <Route path="/" element={<About />} />
+          <Route path="/resume" element={<Resume />} />
+          <Route path="/projects" element={<Project />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
